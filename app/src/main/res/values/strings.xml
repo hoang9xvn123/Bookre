@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bookre</string>
+    <string name="home">TRANG CHỦ</string>
+    <string name="category">THỂ LOẠI</string>
+    <string name="bookmark">THEO DÕI</string>
+    <string name="account">TÀI KHOẢN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
