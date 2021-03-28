@@ -1,3 +1,4 @@
+
 package cf.nhom5.bookre.Fragment;
 
 import android.os.Bundle;
@@ -17,8 +18,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
+
 import com.android.volley.toolbox.Volley;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
@@ -51,11 +51,11 @@ public class HomeFragment extends Fragment {
         //List story
         data_holder = new ArrayList<>();
         requestQueue = Volley.newRequestQueue(getContext());
-        list_story = (RecyclerView) view.findViewById(R.id.list_story);
+        list_story = view.findViewById(R.id.list_story);
         jsonParse();
 
         //Slider
-        imageSlider = (ImageSlider) view.findViewById(R.id.imageSlider);
+        imageSlider =  view.findViewById(R.id.imageSlider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel("https//zingaudio.net/wp-content/uploads/2020/10/nguyen-ton.jpg"));
         slideModels.add(new SlideModel("https://zingaudio.net/wp-content/uploads/2020/10/nguyen-ton.jpg"));
