@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
@@ -20,5 +20,6 @@
         android:id="@+id/bottom_nav"
         app:itemTextColor="@color/black"
         app:itemIconTint="@android:color/black"
+        android:background="@color/dark_gray"
         />
 </RelativeLayout>
