@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412666942747",
+    "project_id": "bookre-56546",
+    "storage_bucket": "bookre-56546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412666942747:android:865ea2273a63945b416fbe",
+        "android_client_info": {
+          "package_name": "cf.nhom5.bookre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412666942747-d75ca5a8q5psc3fh354h8a7cop0km3f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLdX7uQBceNbfX4Gi1hlpDZpfJWsTGpSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412666942747-d75ca5a8q5psc3fh354h8a7cop0km3f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

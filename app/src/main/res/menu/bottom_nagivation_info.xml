@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="YÊU THÍCH"
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/ic_favotite_info"/>
+    <item android:title="ĐỌC NGAY"
+        android:id="@+id/nav_read"
+        android:icon="@drawable/ic_str_doc"/>
+    <item android:title="ĐỌC TIẾP"
+        android:id="@+id/nav_readcon"
+        android:icon="@drawable/ic_baseline_book_24"/>
+</menu>

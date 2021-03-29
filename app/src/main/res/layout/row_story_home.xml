@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_gray"
+    android:id="@+id/item">
+
+    <ImageView
+        android:id="@+id/story_img"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/story_img"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Tên truyện"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:id="@+id/story_name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên tác giả"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/story_author"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/story_status"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số chương"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/story_amount"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@+id/story_img"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+</RelativeLayout>

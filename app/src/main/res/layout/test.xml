@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:id="@+id/header_home">
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm chương"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_home"
+        android:id="@+id/list"/>
+
+</RelativeLayout>

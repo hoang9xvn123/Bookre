@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.InfoStoryActivity">
+
+    <Toolbar
+        android:id="@+id/header_infostr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Truyện"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </Toolbar>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:layout_below="@+id/header_infostr"
+        android:id="@+id/rl_info"
+        >
+
+        <ImageView
+            android:id="@+id/story_img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/story_img"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/layout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Tên truyện"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:id="@+id/story_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên tác giả"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:id="@+id/story_author"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:id="@+id/story_status"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số chương"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:id="@+id/story_amount"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@+id/story_img"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_emty1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_info"
+        android:text="Giới Thiệu Nội Dung"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_emty1"
+        />
+
+    <Toolbar
+        android:id="@+id/chaplist_infostr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/dark_gray">
+
+        <TextView
+            android:id="@+id/txt_chaplist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Chương mới:" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_chaplist"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/muitenphai" />
+    </Toolbar>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nagivation_info"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@android:color/black"
+        android:background="@color/dark_gray"
+        />
+
+
+
+</RelativeLayout>

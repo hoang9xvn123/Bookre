@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/anh4"
+    tools:context=".Activity.SigninActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6AFFFFFF"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/logo2">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/edt_signin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Tên Người Dùng"
+            />
+
+        <EditText
+            android:id="@+id/edt_signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Mật Khẩu"
+            />
+
+        <Button
+            android:id="@+id/btn_sigin_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btncolor"
+            android:text="Đăng Nhập"
+            android:textColor="@color/material_on_surface_emphasis_high_type"
+            android:textColorLink="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="@android:color/holo_orange_dark" />
+
+
+        <TextView
+            android:id="@+id/txt_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="Chưa có tài khoản? Đăng Ký"
+            android:textColor="#050505"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
