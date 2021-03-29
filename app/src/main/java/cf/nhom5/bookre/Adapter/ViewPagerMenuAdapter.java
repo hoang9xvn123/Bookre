@@ -29,8 +29,8 @@ public class ViewPagerMenuAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Fragment v;
+
         switch (position) {
-            case 0: v = new HomeFragment();break;
             case 1: v = new CategoryFragment();break;
             case 2: v = new BookmarkFragment();break;
             case 3: v = new AccountFragment();break;

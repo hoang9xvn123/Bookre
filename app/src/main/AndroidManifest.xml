@@ -14,6 +14,9 @@
         <activity android:name=".Activity.SigninActivity" />
         <activity android:name=".Activity.RegisterActivity" />
         <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.InfoStoryActivity"/>
+        <activity android:name=".Activity.ChapterActivity"/>
+        <activity android:name=".Activity.InfoAppActivity"/>
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

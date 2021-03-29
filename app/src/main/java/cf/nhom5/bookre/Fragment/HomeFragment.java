@@ -48,27 +48,21 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        //Slider
+        imageSlider =  view.findViewById(R.id.imageSlider);
+        List<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel("https://s1.dmcdn.net/v/Riggk1T-yRnLH1URc/x1080"));
+        slideModels.add(new SlideModel("https://s1.dmcdn.net/v/RmX0a1T-9rs6H5q2M/x1080"));
+        slideModels.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kl-rhkHhOcLCihouyr8rbTAhVIZLnjmxOQ&usqp=CAU"));
+        imageSlider.setImageList(slideModels, true);
+
         //List story
         data_holder = new ArrayList<>();
         requestQueue = Volley.newRequestQueue(getContext());
         list_story = view.findViewById(R.id.list_story);
         jsonParse();
 
-        //Slider
-        imageSlider =  view.findViewById(R.id.imageSlider);
-        List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel("https//zingaudio.net/wp-content/uploads/2020/10/nguyen-ton.jpg"));
-        slideModels.add(new SlideModel("https://zingaudio.net/wp-content/uploads/2020/10/nguyen-ton.jpg"));
-        slideModels.add(new SlideModel("https://zingaudio.net/wp-content/uploads/2020/10/nguyen-ton.jpg"));
-        imageSlider.setImageList(slideModels, true);
-
-
         return view;
-    }
-
-    @Override
-    public void onPictureInPictureModeChanged(boolean isInPictureInPictureMode) {
-        super.onPictureInPictureModeChanged(isInPictureInPictureMode);
     }
 
     void jsonParse(){
@@ -83,7 +77,7 @@ public class HomeFragment extends Fragment {
                         String author = story.getString("author");
                         String status = story.getString("status");
                         String amount = story.getString("amount");
-                        String img = story.getString("img");
+                        int img = Integer.parseInt(story.getString("img"));
                         data_holder.add(new Story(id, name, author, status, amount, img));
                     } catch (JSONException e) {
                         e.printStackTrace();

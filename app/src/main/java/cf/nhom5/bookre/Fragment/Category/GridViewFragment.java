@@ -63,7 +63,7 @@ public class GridViewFragment extends Fragment {
                         JSONObject story = response.getJSONObject(i);
                         int id = Integer.parseInt(story.getString("id"));
                         String name = story.getString("name");
-                        String img = story.getString("img");
+                        int img = Integer.parseInt(story.getString("img"));
                         storyList.add(new Story(id, name, img));
                     } catch (JSONException e) {
                         e.printStackTrace();

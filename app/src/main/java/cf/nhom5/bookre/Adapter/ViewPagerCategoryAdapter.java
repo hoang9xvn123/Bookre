@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import cf.nhom5.bookre.Fragment.Category.GridViewFragment;
 
 public class ViewPagerCategoryAdapter extends FragmentStatePagerAdapter {
-    int pos;
+
     public ViewPagerCategoryAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
     }

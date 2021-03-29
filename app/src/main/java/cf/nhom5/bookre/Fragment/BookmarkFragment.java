@@ -20,7 +20,6 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -66,12 +65,11 @@ public class BookmarkFragment extends Fragment {
                         String author = story.getString("author");
                         String status = story.getString("status");
                         String chapter_curr = story.getString("chapter_curr");
-                        String img = story.getString("img");
+                        int img = Integer.parseInt(story.getString("img"));
                         data_holder.add(new Story(id,name,author,status,chapter_curr,img));
 
-                    } catch (JSONException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
-                        Toast.makeText(getContext(), "ERROR1", Toast.LENGTH_LONG).show();
                     }
 
                 }
@@ -80,7 +78,7 @@ public class BookmarkFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(), "ERROR2", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "ERROR2", Toast.LENGTH_SHORT).show();
             }
         });
         requestQueue.add(request);
